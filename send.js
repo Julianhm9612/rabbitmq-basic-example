@@ -1,6 +1,6 @@
 var amqp = require('amqplib/callback_api');
 
-amqp.connect({ protocol: 'amqp', hostname: '10.0.0.54', port: 5672, username: 'picizweb', password: 'p1c1zw3b@2019*.*', vhost: 'PRD' }, function(err, conn) {
+amqp.connect({ protocol: 'amqp', hostname: '0.0.0.0', port: 5672, username: 'user', password: 'pass', vhost: 'schema' }, function(err, conn) {
   conn.createChannel(function(err, ch) {
     var q = 'hello';
     var msg = 'Hello World!';
